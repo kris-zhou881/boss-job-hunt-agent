@@ -1,4 +1,4 @@
 interface:
   display_name: "BOSS 求职助手"
-  short_description: "在 BOSS 直聘完成岗位筛选、简历定制与投递跟踪"
-  default_prompt: "Use $boss-job-hunt-agent to find suitable BOSS jobs, tailor my resume, and wait for my confirmation before applying."
+  short_description: "BOSS 直聘求职风控、简历深度优化与职业空白期重构"
+  default_prompt: "使用 $boss-job-hunt-agent 在 BOSS 直聘筛选岗位、控制投递风险、深度优化真实简历并跟踪申请状态。"
