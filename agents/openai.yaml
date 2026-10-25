@@ -1,4 +1,4 @@
 interface:
   display_name: "BOSS 求职助手"
-  short_description: "BOSS 浏览器自恢复、求职风控、简历优化与投递跟踪"
-  default_prompt: "使用 $boss-job-hunt-agent 在 BOSS 直聘筛选岗位，先自动恢复普通浏览器故障，控制投递风险，优化真实简历并跟踪申请状态。"
+  short_description: "BOSS 受控筛岗、风险核验、真实简历优化与本地跟踪"
+  default_prompt: "使用 $boss-job-hunt-agent 在 BOSS 直聘做只读筛岗与风险核验，基于真实经历生成简历和沟通草稿；未经我逐项确认，不发送消息、不投递、不修改在线简历。"
