@@ -1,4 +1,4 @@
 interface:
   display_name: "BOSS 求职助手"
   short_description: "BOSS 受控筛岗、风险核验、真实简历优化与本地跟踪"
-  default_prompt: "使用 $boss-job-hunt-agent 在 BOSS 直聘做只读筛岗与风险核验，基于真实经历生成简历和沟通草稿；未经我逐项确认，不发送消息、不投递、不修改在线简历。"
+  default_prompt: "使用 $boss-job-hunt-agent 在 BOSS 直聘筛岗、核验公司风险，并基于真实经历生成简历和沟通草稿；外部动作按我明确授权的岗位或有界批次执行，修改在线简历前给我看完整文字。"
