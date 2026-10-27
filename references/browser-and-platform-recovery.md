@@ -42,6 +42,7 @@ Evidence: 时间、URL、页面可见状态或工具错误、已尝试动作及�
 | `AGENT_CREATED_BLANK_TAB` | 本轮 CLI/Agent 操作后出现独立 `about:blank` 标签，且能确认它由本轮新建；这与原 BOSS 对话页变空白不同。停止待发送动作，只清理本轮新建的空白标签；无法确认归属就保留，不关闭用户标签，也不推断平台风控或发送结果 |
 | `PAGE_CRASHED` | 工具明确报告页面崩溃或可见崩溃提示；增加 `Crash count`，保留进度并请用户手动打开 |
 | `CONNECTOR_DISCONNECTED` | 工具明确连接或权限失效；暂停并说明需要恢复实际使用的浏览器连接，不一律假定是 Chrome 插件 |
+| `SESSION_HANDLE_STALE` | 工具报告旧标签不属于当前浏览器会话，或当前会话的标签清单已无原 BOSS 页面；丢弃旧标签句柄，保留检查点和未确认的写入状态。只使用当前会话中重新清点到的有效 BOSS 页；没有时按手动打开流程等待，不推断验证码、账号风控或造成会话变化的原因。工具明确禁止换途径时仍按 `BROWSER_POLICY_DENIED` 停止 |
 | `LOGIN_REQUIRED` | 明确登录页；保留页面，由用户登录 |
 | `CAPTCHA_REQUIRED` / `PLATFORM_LIMIT` | 验证码、安全验证、操作频繁、访问受限或账号异常；进入 `PLATFORM_RISK_PAUSE`，立即停止自动操作，不刷新或换页绕过 |
 | `RECOVERY_PAUSED` | 当前无可用 BOSS 页面或状态不足以安全继续；保存检查点并等待用户手动打开 |
